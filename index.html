@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-7YXO4bh4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-s0Cg7765.css">
+</head>
+
+<body>
+    <header>
+        <section class="box">
+            <h1 class="box__city"></h1>
+            <p class="box__temp"></p>
+            <div class="box__img">
+                <img class="box__icon">
+            </div>
+            <div class="box__formulaire">
+                <input list="Ville__datalist" type="text" class="box__formulaire__input" id="ville" placeholder="city">
+                <datalist id="Ville__datalist">
+                </datalist>
+                <button class="box__formulaire__btn" type="button" id="btn_accueil"><img class="box__formulaire__btn__search" src="/assets/recherche_white-nvdeF6xv.png"></button>
+                <button class="box__formulaire__comparaison" id="btn__comparaison">+</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="main__days">
+            <div class="main__days__day" id="0">
+                <p class="main__days__day__jour" id="main__jour0"></p>
+                <img class="main__days__day__icon" id="main__icon0">
+                <p class="main__days__day__temp" id="main__temp0"></p>
+            </div>
+            <div class="main__days__day" id="1">
+                <p class="main__days__day__jour" id="main__jour1"></p>
+                <img class="main__days__day__icon" id="main__icon1">
+                <p class="main__days__day__temp" id="main__temp1"></p>
+            </div>
+            <div class="main__days__day" id="2">
+                <p class="main__days__day__jour" id="main__jour2"></p>
+                <img class="main__days__day__icon" id="main__icon2">
+                <p class="main__days__day__temp" id="main__temp2"></p>
+            </div>
+            <div class="main__days__day" id="3">
+                <p class="main__days__day__jour" id="main__jour3"></p>
+                <img class="main__days__day__icon" id="main__icon3">
+                <p class="main__days__day__temp" id="main__temp3"></p>
+            </div>
+            <div class="main__days__day" id="4">
+                <p class="main__days__day__jour" id="main__jour4"></p>
+                <img class="main__days__day__icon" id="main__icon4">
+                <p class="main__days__day__temp" id="main__temp4"></p>
+            </div>
+        </section>
+        <section class="main__days" id="main__comparaison">
+
+        </section>
+        <section class="main__ligne">
+            <canvas id="tempCanva" class="main__ligne__canva"></canvas>
+        </section>
+    </main>
+
+       
+        
+
+</body>
+
+</html>
